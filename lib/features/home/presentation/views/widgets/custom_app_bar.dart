@@ -9,7 +9,7 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Image.asset(AssetsPaths.logo, height: 80, width: 80),
+        Image.asset(AssetsPaths.logo, height: 100, width: 100),
         Spacer(),
         IconButton(
           onPressed: () {
