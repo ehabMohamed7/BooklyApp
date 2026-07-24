@@ -1,4 +1,5 @@
 import 'package:bookly_app/features/home/presentation/views/widgets/custom_app_bar.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/custom_item_in_listview.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -9,7 +10,13 @@ class HomeViewBody extends StatelessWidget {
     return const Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 22),
-        child: Column(children: [SizedBox(height: 25), CustomAppBar()]),
+        child: Column(
+          children: [
+            SizedBox(height: 25),
+            CustomAppBar(),
+            CustomItemInListView(),
+          ],
+        ),
       ),
     );
   }
